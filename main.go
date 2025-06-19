@@ -36,7 +36,7 @@ func main() {
 
 	log.Printf("%v votes sent successfully starting from %v till %v (%v elapsed)\n\n", votesData.TotalVotesSent, votesData.StartTime.Format(time.DateTime), time.Now().Format(time.DateTime), time.Since(votesData.StartTime))
 
-	for range 100 {
+	for range 1000 {
 		go func() {
 			for {
 				reqData := map[string]any{
